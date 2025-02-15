@@ -1,6 +1,6 @@
 :root{
-    --primary: #FBA518;
-    --bg: #fff5e6;
+    --primary: #206d07;
+    --bg: #cdf1c0;
 }
 
 * {
@@ -8,11 +8,49 @@
     margin: 0;
     outline: none;
     border: none;
+    text-decoration: none;
+
 }
 
 body{
     font-family: "Poppins", serif;
     background-color: var(--bg);
+    color: #000;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(9, 80, 13, 0.606);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo{
+    color: #ffffff;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.navbar .navbar-logo span{
+    color: #037c0d;
+}
+
+
+.navbar .navbar-nav a{
+    color: #ffffff;
+       
+}
+
+.navbar .navbar-extra a{
+    color: #ffffff;
+}
+
+
 
 
