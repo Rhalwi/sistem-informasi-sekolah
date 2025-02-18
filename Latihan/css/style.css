@@ -9,6 +9,7 @@
     outline: none;
     border: none;
     text-decoration: none;
+    box-sizing: border-box;
 
 }
 
@@ -35,6 +36,7 @@ body{
     color: #ffffff;
     font-weight: 700;
     font-style: normal;
+    font-size: 1.6rem;
 }
 
 .navbar .navbar-logo span{
@@ -44,13 +46,31 @@ body{
 
 .navbar .navbar-nav a{
     color: #ffffff;
-       
+    display: inline-block;
+    margin: 0 1.2rem;
+    font-size: 1rem;
+           
 }
+
+.navbar .navbar-nav a:hover{
+    color: var(--primary);
+} 
 
 .navbar .navbar-extra a{
     color: #ffffff;
+    margin: 0 1.2rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--primary);
 }
 
 
-
+/* home section */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/gedung-bg.png);
+}
 
