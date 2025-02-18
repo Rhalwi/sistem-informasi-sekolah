@@ -72,5 +72,68 @@ body{
     display: flex;
     align-items: center;
     background-image: url(../img/gedung-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
+.home .content {
+    max-width: 60rem;
+    padding: 1rem 7%;
+}
+
+.home .content h1{
+    font-size: 4em;
+    color: #fff;
+    line-height: 1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.58);
+}
+
+.home .content h1 span{
+    color: var(--primary);
+}
+
+.home .content p{
+    /* font-weight: 300; */
+    color: #fff;
+    line-height: 1;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.58);
+    margin-top: 1rem;
+}
+
+
+/* media queris */
+/* laptop */
+@media (max-width: 1200px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* laptop kecil */
+@media (max-width: 992px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+/* laptop */
+@media (max-width: 480px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+
+
+
+
+
 
