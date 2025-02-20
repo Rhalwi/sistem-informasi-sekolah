@@ -1,6 +1,6 @@
 :root{
-    --primary: #206d07;
-    --bg: #cdf1c0;
+    --primary: #3A7D44;
+    --bg: #9DC08B;
 }
 
 * {
@@ -16,7 +16,8 @@
 body{
     font-family: "Poppins", serif;
     background-color: var(--bg);
-    color: #000;
+    color: #F8F5E9;
+    height: 3000px;
 }
 
 .navbar {
@@ -24,7 +25,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1.4rem 7%;
-    background-color: rgba(9, 80, 13, 0.606);
+    background-color: rgba(97, 120, 33, 0.606);
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +34,7 @@ body{
 }
 
 .navbar .navbar-logo{
-    color: #ffffff;
+    color: #F8F5E9;
     font-weight: 700;
     font-style: normal;
     font-size: 1.6rem;
@@ -45,7 +46,7 @@ body{
 
 
 .navbar .navbar-nav a{
-    color: #ffffff;
+    color: #F8F5E9;
     display: inline-block;
     margin: 0 1.2rem;
     font-size: 1rem;
@@ -57,7 +58,7 @@ body{
 } 
 
 .navbar .navbar-extra a{
-    color: #ffffff;
+    color: #F8F5E9;
     margin: 0 1.2rem;
 }
 
@@ -75,16 +76,30 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+    
 }
 
+
+
+.home::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%; height: 20%;
+    bottom: 0;
+    background: linear-gradient(0deg, 
+    #9DC08B 8%, 
+    rgba(255, 255, 255, 0) 25%);
+}
 .home .content {
     max-width: 60rem;
     padding: 1rem 7%;
+    
 }
-
 .home .content h1{
     font-size: 4em;
-    color: #fff;
+    color: #F8F5E9;
     line-height: 1;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.58);
 }
@@ -95,11 +110,63 @@ body{
 
 .home .content p{
     /* font-weight: 300; */
-    color: #fff;
+    color: #F8F5E9;
     line-height: 1;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.58);
     margin-top: 1rem;
 }
+
+/* about section */
+.about {
+    padding: 8rem 7% 1.4rem;
+    /* width: 70%; */
+    /* left: 50%; */
+    
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    color: var(--primary);
+    margin-bottom: 3rem;
+
+}
+
+.about h2 span {
+    color: #DF6D14;
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 10rem;
+}
+
+.about .row .about-img img{    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.about .row .content{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* media queris */
