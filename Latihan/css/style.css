@@ -17,7 +17,7 @@ body{
     font-family: "Poppins", serif;
     background-color: var(--bg);
     color: #F8F5E9;
-    height: 3000px;
+    height: 5000px;
 }
 
 .navbar {
@@ -117,22 +117,22 @@ body{
 }
 
 /* about section */
-.about {
+.about, .activity, .contact {
     padding: 8rem 7% 1.4rem;
     /* width: 70%; */
     /* left: 50%; */
     
 }
 
-.about h2 {
+.about h2, .activity h2, .contact h2 {
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     color: var(--primary);
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 
 }
 
-.about h2 span {
+.about h2 span, .activity h2 span, .contact h2 span {
     color: #DF6D14;
 }
 
@@ -155,6 +155,64 @@ body{
     flex: 1 1 35rem;
     padding: 0 1rem;
 }
+
+.about .row .content h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.about .row .content .cta {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #F8F5E9;
+    background-color: var(--primary);
+    border-radius: 0.5;
+    box-shadow: 1px 1px 3px #000;
+}
+
+/* activity section */
+.activity .row {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 3rem; */
+    justify-content: center;
+    
+}
+
+.activity .row .menu-card{
+    text-align: center;
+    padding: 1rem;
+    max-width: 20rem;
+    max-height: 100%;
+    margin: 1rem;
+    box-shadow: 1px 1px 3px #000;
+    border-radius: 5%;
+    background-color: var(--primary);
+
+}
+
+.activity .row .menu-card .h3{
+    margin: 1rem auto 0.5rem;
+}
+
+.activity .row .menu-card img{
+    border-radius: 58%;
+}
+.activity .row .menu-card .cta{
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #F8F5E9;
+    text-align: left;
+}
+
 
 
 
